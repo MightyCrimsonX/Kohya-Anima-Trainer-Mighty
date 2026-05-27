@@ -70,7 +70,7 @@ Por si no les aparece los paths de los modelos, aqui se los dejo:
 
 ### Modelos Illustrious
 
-Illustrious 0.1 = **/content/models/Illustrious-XL-v0.1.safetensors**
+Illustrious 0.1 = **/content/models/Illustrious-XL-v0.1.safetensors** n/
 Illustrious 2.0 = **/content/models/Illustrious-XL-v2.0.safetensors**
 
 SDXL Vae & Vae FP16 Fix = **/content/models/sdxl_vae.safetensors**
