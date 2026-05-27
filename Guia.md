@@ -58,9 +58,41 @@ En este apartado solo tienen que enfocarse en el numero de repeats, Keep tags y 
 
 Pueden agregar tantas carpetas (subset) que quieran para el entrenamiento.
 
-# Proximamente
 
-Explicare como usar mi futuro notebook junto a esta herramienta.
+# Notebook
+
+Ahora vamos a la explicacion de como integrar colab (usando mi notebook) a la UI que tenemos instalado en nuestra computadora.
+Cabe recalcar que la ui que descargamos simplemente es un frontend del entrenador, esto quiere decir que los modelos, el dataset, y el output del lora resultante entrenado se encontrara fuera de su equipo local. Para el dataset y el ouput, existe una celda concreta en la cual se tiene que especificar en que lugar se encuentra el dataset y se alojara el lora resultante, ya sea dentro del propio entorno de colab o dentro del drive de la cuenta que se esta usando en ese momento, si se usa el metodo dentro de colab, el dataset se tendra que subir manualmente a travez del gestor de archivos del mismo y tambien se debera descargar el lora antes de apagar el entorno, ya que se borra todos los datos y no se podrá recuperar nada.
+
+Mencionado anteriormente que la UI solo es frontend, hay que establecer el directorio de los modelos en donde se encuentran dentro de colab y no localmente, asi como el directorio donde se encuentra el dataset, el archivo de los prompt para los samples, y el output de los loras.  Para ello se les menciona como resultado de las celdas el directorio donde se encuentra cada uno de los mencionados anteriormente para mas comodidad, y simplemente tienen que poner cada directorio donde corresponde.
+
+Por si no les aparece los paths de los modelos, aqui se los dejo:
+
+### Modelos Illustrious
+
+Illustrious 0.1 = **/content/models/Illustrious-XL-v0.1.safetensors**
+Illustrious 2.0 = **/content/models/Illustrious-XL-v2.0.safetensors**
+
+SDXL Vae & Vae FP16 Fix = **/content/models/sdxl_vae.safetensors**
+
+### Modelo Anima V1 Base
+
+Modelo Anima Base = **/content/models/anima-base-v1.0.safetensors**
+Vae de Anima = **/content/models/qwen_image_vae.safetensors**
+Text Encoder de Anima = **/content/models/qwen_3_06b_base.safetensors**
+
+## Funcionamiento
+
+Una vez que ya tengamos todo seteado e iniciado el backend, copiamos el enlace de gradio (si este esta caido, pueden usar el de cloudflare, no hay ningun problema en eso), y pegamos en el cuadro de texto en la ezquina inferior derecha.
+
+<img width="1359" height="741" alt="image" src="https://github.com/user-attachments/assets/e083fc4d-8717-4896-a60b-da8bc8f09c60" />
+
+Y con esto ya estaria comenzando a entrenar, si por algun momento no entrena nada, lo cual lo pueden notar en colab porque no muestra ningun mensaje en el log, puede ser que algun directorio este mal escrito o falta, pueden verificarlo a travez de la ventana de comandos que tienen abierta cuando abren la UI en su ordenador.
+Recuerden que una vez entrenado, si estan usando el propio colab para alojar el dataset, tendran que descargar los loras resultantes!.
+
+
+
+
 
 
 
