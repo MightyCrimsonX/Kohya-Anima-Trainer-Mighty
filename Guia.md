@@ -70,15 +70,15 @@ Por si no les aparece los paths de los modelos, aqui se los dejo:
 
 ### Modelos Illustrious
 
-Illustrious 0.1 = **/content/models/Illustrious-XL-v0.1.safetensors** n/
+Illustrious 0.1 = **/content/models/Illustrious-XL-v0.1.safetensors** \
 Illustrious 2.0 = **/content/models/Illustrious-XL-v2.0.safetensors**
 
 SDXL Vae & Vae FP16 Fix = **/content/models/sdxl_vae.safetensors**
 
 ### Modelo Anima V1 Base
 
-Modelo Anima Base = **/content/models/anima-base-v1.0.safetensors**
-Vae de Anima = **/content/models/qwen_image_vae.safetensors**
+Modelo Anima Base = **/content/models/anima-base-v1.0.safetensors** \
+Vae de Anima = **/content/models/qwen_image_vae.safetensors** \
 Text Encoder de Anima = **/content/models/qwen_3_06b_base.safetensors**
 
 ## Funcionamiento
