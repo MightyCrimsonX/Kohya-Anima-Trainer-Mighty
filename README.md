@@ -115,4 +115,4 @@ La interfaz de Lora Easy Training Scripts incluye paneles organizados para cada 
 
 ## 📜 Licencia
 
-Este proyecto se distribuye bajo la misma licencia que los proyectos base (GPL-3.0). Consulta los repositorios originales para más detalles.
+Este proyecto se distribuye bajo la licencia MIT. Consulta los repositorios originales para más detalles.
